@@ -1,0 +1,31 @@
+<mat-toolbar>Add Post </mat-toolbar>
+
+<mat-card>
+  <form #userform="ngForm" (ngSubmit)="onAddForm(userform)">
+    <mat-form-field>
+      <input
+      type="text"
+      name="enteredTitle"
+      ngModel
+      #enteredTitle="ngModel"
+      matInput
+      placeholder="Title"
+      [(ngModel)]="posts.enteredTitle">
+    </mat-form-field>
+
+    <br><br>
+    <mat-form-field>
+    <textarea
+    name="enteredMsg"
+    ngModel
+    matInput
+    #enteredMsg="ngModel"
+    [(ngModel)]="posts.enteredMsg"
+    placeholder="Message"></textarea>
+  </mat-form-field>
+
+    <br><br>
+
+    <button type="submit" mat-raised-button color="primary">Add Post</button>
+  </form>
+</mat-card>
