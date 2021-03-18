@@ -16,12 +16,22 @@ import {MatExpansionModule} from '@angular/material/expansion';
 
 
 import { FormsModule } from '@angular/forms';
+import { LoginComponent } from './login/login.component';
+import { ProfileComponent } from './profile/profile.component';
+import { PostComponent } from './post/post.component';
+import { UsersComponent } from './users/users.component';
+import { LogoutComponent } from './logout/logout.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PostCreateComponent,
-    PostListComponent
+    PostListComponent,
+    LoginComponent,
+    ProfileComponent,
+    PostComponent,
+    UsersComponent,
+    LogoutComponent
   ],
   imports: [
     BrowserModule,
