@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { EditUserComponent } from './edit-user/edit-user.component';
 import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './logout/logout.component';
 import { PostComponent } from './post/post.component';
@@ -29,6 +30,10 @@ const routes: Routes = [
   {
     path:'logout',
     component:LogoutComponent
+  },
+  {
+    path:'edit-user',
+    component:EditUserComponent
   }
 ];
 

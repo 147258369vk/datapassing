@@ -68,8 +68,8 @@
       <td>{{data.email}}</td>
       <td>{{data.location}}</td>
       <td>{{data.profile}}</td>
-      <td><mat-icon>edit</mat-icon></td>
-      <td><mat-icon>delete</mat-icon></td>
+      <td><mat-icon (click)="onEdit(i)">edit</mat-icon></td>
+      <td><mat-icon (click)="onDelete(i)">delete</mat-icon></td>
     </tr>
   </table>
 </mat-card>

@@ -23,6 +23,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { PostComponent } from './post/post.component';
 import { UsersComponent } from './users/users.component';
 import { LogoutComponent } from './logout/logout.component';
+import { EditUserComponent } from './edit-user/edit-user.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { LogoutComponent } from './logout/logout.component';
     ProfileComponent,
     PostComponent,
     UsersComponent,
-    LogoutComponent
+    LogoutComponent,
+    EditUserComponent
   ],
   imports: [
     BrowserModule,

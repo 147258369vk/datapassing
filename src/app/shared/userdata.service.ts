@@ -29,4 +29,17 @@ private userDetails:Userdata[]=[
   {
     return this.userDetails.slice();
   }
+
+  deleteUser(id:number)
+  {
+    this.userDetails.splice(id,1);
+    this.updatedData.next(this.userDetails.slice());
+
+  }
+  selectedUser(index:number)
+  {
+    return this.userDetails[index];
+  }
+
+
 }
